@@ -21,7 +21,7 @@ This is a Python implementation of a simple peer-to-peer file sharing system. Th
 
  1. Server.py : This has all the functionalities for the server to act as the central indexing node
  2. Client.py: You can create multiples copies of this and put it in a respective client folder
- 3. benchmark.py : This is to automate client creation
+ 3. benchmark.py : This script is to automate client node creation
 
 
 ###  How to reproduce?
@@ -57,36 +57,12 @@ This is a Python implementation of a simple peer-to-peer file sharing system. Th
 
 
 ###  Benchmark
-1. For each client you create, it should be in the following directory structure: 
-```markdown
-├── server.py
-├── benchmark.py
-│   ├── Client1
-│   │   ├── client.py
-│   │   ├── files
-|	│   │   ├── all the files that client1 has access to
-│   ├── Client2
-│   │   ├── client.py
-│   │   ├── files
-|	│   │   ├── all the files that client2 has access to
-│   ├── Client3
-│   │   ├── client.py
-│   │   ├── files
-|	│   │   ├── all the files that client3 has access to
-│   ├── Client4
-│   │   ├── client.py
-│   │   ├── files
-|	│   │   ├── all the files that client4 has access to
-│   ├── Clientn
-│   │   ├── client.py
-│   │   ├── files
-|	│   │   ├── all the files that clientn has access to
-```
-2. Run the server.py, it will start on port 7734 by default
-3. Now you can start any of all the clients that you want to be connected to the p2p server
-4. For each of the client program, you can perform the following functionalities - add, lookup, download files. You can choose that with the appropriate menu option
-5. Finally a client can also be shutdown using the menu option
-
+1. Start the server
+2. start the primary client - in this case the client 1 manually
+3. You have a functionality in the menu item to automate dummy file creation called 'benchmark_fc'. You can enter this menu item. 
+4. 'benchmark_fc' creates a list of files starting from 2 Bytes to 1 MB (2^1 bytes  to 2^10 Bytes) 
+5. run benchmark.py - this will ask for the number of clients to be created, for each of the clients - requested files will be searched for and downloaded
+6. Eventually as more nodes have the files, availability of the files is more, would eventually become better than server - client model.
 
 ###  Program Flow
 1.  The client is initialized with the server host, version, and file directory.

@@ -25,6 +25,7 @@ This is a Python implementation of a simple peer-to-peer file sharing system. Th
 
 
 ###  How to reproduce?
+#### Time to run the scripts - 1-2 minutes
 1. For each client you create, it should be in the following directory structure: 
 ```markdown
 ├── server.py

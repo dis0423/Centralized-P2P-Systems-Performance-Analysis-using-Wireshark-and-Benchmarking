@@ -1,6 +1,6 @@
 # Centralized-P2P-Systems-Performance-Analysis-using-Wireshark-and-Benchmarking
 
-![Imdis1](https://user-images.githubusercontent.com/131905799/236705496-60244fcf-270c-4fdf-8a08-4338e3677ecf.png)
+![imdis11](https://user-images.githubusercontent.com/131905799/236705664-d1fef748-91f0-439f-bf19-8c3c5014c34a.png)
 
 ### About
 This is a Python implementation of a simple peer-to-peer file sharing system. The system consists of a server and multiple clients, where clients can connect to the server and register their available files. Other clients can then search for files on the server and download them directly from the clients that have them. The system is implemented using sockets, threading, and a simple protocol for communicating between the server and clients.
